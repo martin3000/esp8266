@@ -20,8 +20,7 @@ void loop() {
 
   int value = analogRead(fotoZellePin); // 1024->sehr hell, 166->Zimmerhelligkeit
   int buttonValue = digitalRead(BUTTON);
-  Serial.println(HIGH);
-
+  
   if (buttonValue==LOW) {
     analogWrite(BLUE_LED,255);
     digitalWrite(CONTROL_LED, LOW);
